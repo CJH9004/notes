@@ -1,0 +1,626 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Hooks · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="总结.html" />
+    
+    
+    <link rel="prev" href="API参考.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    web前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    react
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" >
+            
+                <span>
+            
+                    
+                    官方文档精要
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="核心概念.html">
+            
+                <a href="核心概念.html">
+            
+                    
+                    核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="高级指引.html">
+            
+                <a href="高级指引.html">
+            
+                    
+                    高级指引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="API参考.html">
+            
+                <a href="API参考.html">
+            
+                    
+                    API参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.1.4" data-path="Hooks.html">
+            
+                <a href="Hooks.html">
+            
+                    
+                    Hooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.5" data-path="总结.html">
+            
+                <a href="总结.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" >
+            
+                <span>
+            
+                    
+                    设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../设计/组件划分.md">
+            
+                <span>
+            
+                    
+                    组件划分
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../安全/XSS攻击.html">
+            
+                <a href="../../安全/XSS攻击.html">
+            
+                    
+                    XSS攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    开发环境与脚手架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../开发环境与脚手架/使用typescript和storybook开发react组件库.html">
+            
+                <a href="../../开发环境与脚手架/使用typescript和storybook开发react组件库.html">
+            
+                    
+                    使用typescript和storybook开发react组件库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../其他/对golang程序内存优化的总结.html">
+            
+                <a href="../../../其他/对golang程序内存优化的总结.html">
+            
+                    
+                    对golang程序内存优化的总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../其他/golang基本类型.html">
+            
+                <a href="../../../其他/golang基本类型.html">
+            
+                    
+                    golang基本类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../其他/p2p_udp打洞.html">
+            
+                <a href="../../../其他/p2p_udp打洞.html">
+            
+                    
+                    p2p_udp打洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Hooks</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hooks">Hooks</h1>
+<h2 id="&#x52A8;&#x673A;">&#x52A8;&#x673A;</h2>
+<ul>
+<li>Hook &#x4F7F;&#x4F60;&#x5728;&#x65E0;&#x9700;&#x4FEE;&#x6539;&#x7EC4;&#x4EF6;&#x7ED3;&#x6784;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x590D;&#x7528;&#x72B6;&#x6001;&#x903B;&#x8F91;</li>
+</ul>
+<h2 id="state-hook">State Hook</h2>
+<ul>
+<li>&#x901A;&#x8FC7;&#x5728;&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x91CC;&#x8C03;&#x7528;useState&#x6765;&#x7ED9;&#x7EC4;&#x4EF6;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x5185;&#x90E8; state&#x3002;React &#x4F1A;&#x5728;&#x91CD;&#x590D;&#x6E32;&#x67D3;&#x65F6;&#x4FDD;&#x7559;&#x8FD9;&#x4E2A; state&#x3002;</li>
+<li>React &#x5047;&#x8BBE;&#x5F53;&#x4F60;&#x591A;&#x6B21;&#x8C03;&#x7528; useState &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x80FD;&#x4FDD;&#x8BC1;&#x6BCF;&#x6B21;&#x6E32;&#x67D3;&#x65F6;&#x5B83;&#x4EEC;&#x7684;&#x8C03;&#x7528;&#x987A;&#x5E8F;&#x662F;&#x4E0D;&#x53D8;&#x7684;&#x3002;</li>
+<li>todo&#xFF1A;&#x8C03;&#x7528; State Hook &#x7684;&#x66F4;&#x65B0;&#x51FD;&#x6570;&#x5E76;&#x4F20;&#x5165;&#x5F53;&#x524D;&#x7684; state &#x65F6;&#xFF0C;React &#x5C06;&#x8DF3;&#x8FC7;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x6E32;&#x67D3;&#x53CA; effect &#x7684;&#x6267;&#x884C;&#x3002;&#xFF08;React &#x4F7F;&#x7528; Object.is &#x6BD4;&#x8F83;&#x7B97;&#x6CD5; &#x6765;&#x6BD4;&#x8F83; state&#x3002;&#xFF09;</li>
+</ul>
+<h2 id="effect-hook">Effect Hook</h2>
+<ul>
+<li>React &#x7EC4;&#x4EF6;&#x4E2D;&#x6267;&#x884C;&#x6570;&#x636E;&#x83B7;&#x53D6;&#x3001;&#x8BA2;&#x9605;&#x6216;&#x8005;&#x624B;&#x52A8;&#x4FEE;&#x6539;&#x8FC7; DOM &#x79F0;&#x4E3A;&#x201C;&#x526F;&#x4F5C;&#x7528;&#x201D;</li>
+<li>&#x53EF;&#x4EE5;&#x5728; effect &#x4E2D;&#x83B7;&#x53D6;&#x6700;&#x65B0;&#x7684; state &#x7684;&#x503C;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x5176;&#x8FC7;&#x671F;&#x7684;&#x539F;&#x56E0;&#x662F;&#x6BCF;&#x6B21;&#x6211;&#x4EEC;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#xFF0C;&#x90FD;&#x4F1A;&#x751F;&#x6210;&#x65B0;&#x7684; effect&#xFF0C;&#x66FF;&#x6362;&#x6389;&#x4E4B;&#x524D;&#x7684;&#x3002;&#x4E00;&#x65E6; effect &#x7684;&#x4F9D;&#x8D56;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x88AB;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x4F20;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x7A7A;&#x6570;&#x7EC4;&#xFF08;[]&#xFF09;&#xFF0C;effect &#x5185;&#x90E8;&#x7684; props &#x548C; state &#x5C31;&#x4F1A;&#x4E00;&#x76F4;&#x62E5;&#x6709;&#x5176;&#x521D;&#x59CB;&#x503C;&#x3002;</li>
+<li>&#x4E0D;&#x5E94;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x6267;&#x884C;&#x963B;&#x585E;&#x6D4F;&#x89C8;&#x5668;&#x66F4;&#x65B0;&#x5C4F;&#x5E55;&#x7684;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x867D;&#x7136; useEffect &#x4F1A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7ED8;&#x5236;&#x540E;&#x5EF6;&#x8FDF;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x4F1A;&#x4FDD;&#x8BC1;&#x5728;&#x4EFB;&#x4F55;&#x65B0;&#x7684;&#x6E32;&#x67D3;&#x524D;&#x6267;&#x884C;&#x3002;React &#x5C06;&#x5728;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x524D;&#x5237;&#x65B0;&#x4E0A;&#x4E00;&#x8F6E;&#x6E32;&#x67D3;&#x7684; effect&#x3002;</li>
+<li>React &#x4F1A;&#x7B49;&#x5F85;&#x6D4F;&#x89C8;&#x5668;&#x5B8C;&#x6210;&#x753B;&#x9762;&#x6E32;&#x67D3;&#x4E4B;&#x540E;&#x624D;&#x4F1A;&#x5EF6;&#x8FDF;&#x8C03;&#x7528; useEffect&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x4F7F;&#x5F97;&#x989D;&#x5916;&#x64CD;&#x4F5C;&#x5F88;&#x65B9;&#x4FBF;&#x3002;</li>
+</ul>
+<h2 id="usecontext">useContext</h2>
+<ul>
+<li>&#x8C03;&#x7528;&#x4E86; useContext &#x7684;&#x7EC4;&#x4EF6;&#x603B;&#x4F1A;&#x5728; context &#x503C;&#x53D8;&#x5316;&#x65F6;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#x3002;&#x5982;&#x679C;&#x91CD;&#x6E32;&#x67D3;&#x7EC4;&#x4EF6;&#x7684;&#x5F00;&#x9500;&#x8F83;&#x5927;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5; &#x901A;&#x8FC7;&#x4F7F;&#x7528; memoization &#x6765;&#x4F18;&#x5316;&#x3002;</li>
+</ul>
+<h2 id="usereducer">useReducer</h2>
+<ul>
+<li>React &#x4F1A;&#x786E;&#x4FDD; dispatch &#x51FD;&#x6570;&#x7684;&#x6807;&#x8BC6;&#x662F;&#x7A33;&#x5B9A;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x4F1A;&#x5728;&#x7EC4;&#x4EF6;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#x65F6;&#x6539;&#x53D8;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x5730;&#x4ECE; useEffect &#x6216; useCallback &#x7684;&#x4F9D;&#x8D56;&#x5217;&#x8868;&#x4E2D;&#x7701;&#x7565; dispatch&#x3002;</li>
+<li>&#x5982;&#x679C; Reducer Hook &#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E0E;&#x5F53;&#x524D; state &#x76F8;&#x540C;&#xFF0C;React &#x5C06;&#x8DF3;&#x8FC7;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x6E32;&#x67D3;&#x53CA;&#x526F;&#x4F5C;&#x7528;&#x7684;&#x6267;&#x884C;&#x3002;&#xFF08;React &#x4F7F;&#x7528; Object.is &#x6BD4;&#x8F83;&#x7B97;&#x6CD5; &#x6765;&#x6BD4;&#x8F83; state&#x3002;&#xFF09;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> initialState = {count: <span class="hljs-number">0</span>};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">state, action</span>) </span>{
+  <span class="hljs-keyword">switch</span> (action.type) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;increment&apos;</span>:
+      <span class="hljs-keyword">return</span> {count: state.count + <span class="hljs-number">1</span>};
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;decrement&apos;</span>:
+      <span class="hljs-keyword">return</span> {count: state.count - <span class="hljs-number">1</span>};
+    <span class="hljs-keyword">default</span>:
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>();
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Counter</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> [state, dispatch] = useReducer(reducer, initialState);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      Count: {state.count}
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> dispatch({type: &apos;increment&apos;})}&gt;+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> dispatch({type: &apos;decrement&apos;})}&gt;-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span>
+  );
+}
+</span></code></pre>
+<h2 id="usecallback">useCallback</h2>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; memoized &#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</li>
+<li>useCallback(fn, deps) &#x76F8;&#x5F53;&#x4E8E; useMemo(() =&gt; fn, deps)&#x3002;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> memoizedCallback = useCallback(
+  () =&gt; {
+    doSomething(a, b);
+  },
+  [a, b],
+);
+</code></pre>
+<h2 id="usememo">useMemo</h2>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; memoized &#x503C;&#x3002;</li>
+<li>&#x4F20;&#x5165; useMemo &#x7684;&#x51FD;&#x6570;&#x4F1A;&#x5728;&#x6E32;&#x67D3;&#x671F;&#x95F4;&#x6267;&#x884C;&#x3002;&#x8BF7;&#x4E0D;&#x8981;&#x5728;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x6267;&#x884C;&#x4E0E;&#x6E32;&#x67D3;&#x65E0;&#x5173;&#x7684;&#x64CD;&#x4F5C;</li>
+</ul>
+<h2 id="useref">useRef</h2>
+<ul>
+<li>useRef &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53EF;&#x53D8;&#x7684; ref &#x5BF9;&#x8C61;&#xFF0C;&#x5176; .current &#x5C5E;&#x6027;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#xFF08;initialValue&#xFF09;&#x3002;&#x8FD4;&#x56DE;&#x7684; ref &#x5BF9;&#x8C61;&#x5728;&#x7EC4;&#x4EF6;&#x7684;&#x6574;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;</li>
+<li>useRef() &#x6BD4; ref &#x5C5E;&#x6027;&#x66F4;&#x6709;&#x7528;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x5730;&#x4FDD;&#x5B58;&#x4EFB;&#x4F55;&#x53EF;&#x53D8;&#x503C;&#xFF0C;&#x5176;&#x7C7B;&#x4F3C;&#x4E8E;&#x5728; class &#x4E2D;&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;&#x5B57;&#x6BB5;&#x7684;&#x65B9;&#x5F0F;</li>
+<li>useRef() &#x548C;&#x81EA;&#x5EFA;&#x4E00;&#x4E2A; {current: ...} &#x5BF9;&#x8C61;&#x7684;&#x552F;&#x4E00;&#x533A;&#x522B;&#x662F;&#xFF0C;useRef &#x4F1A;&#x5728;&#x6BCF;&#x6B21;&#x6E32;&#x67D3;&#x65F6;&#x8FD4;&#x56DE;&#x540C;&#x4E00;&#x4E2A; ref &#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5F53; ref &#x5BF9;&#x8C61;&#x5185;&#x5BB9;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;useRef &#x5E76;&#x4E0D;&#x4F1A;&#x901A;&#x77E5;&#x4F60;&#x3002;&#x53D8;&#x66F4; .current &#x5C5E;&#x6027;&#x4E0D;&#x4F1A;&#x5F15;&#x53D1;&#x7EC4;&#x4EF6;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#x3002;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">TextInputWithFocusButton</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> inputEl = useRef(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> onButtonClick = () =&gt; {
+    <span class="hljs-comment">// `current` &#x6307;&#x5411;&#x5DF2;&#x6302;&#x8F7D;&#x5230; DOM &#x4E0A;&#x7684;&#x6587;&#x672C;&#x8F93;&#x5165;&#x5143;&#x7D20;</span>
+    inputEl.current.focus();
+  };
+  <span class="hljs-keyword">return</span> (
+    &lt;&gt;
+      &lt;input ref={inputEl} type=&quot;text&quot; /&gt;
+      &lt;button onClick={onButtonClick}&gt;Focus the input&lt;/button&gt;
+    &lt;/&gt;
+  );
+}
+
+function Timer() {
+  const intervalRef = useRef();
+
+  useEffect(() =&gt; {
+    const id = setInterval(() =&gt; {
+      // ...
+    });
+    intervalRef.current = id;
+    return () =&gt; {
+      clearInterval(intervalRef.current);
+    };
+  });
+
+  // ...
+}
+</code></pre>
+<h2 id="usedebugvalue">useDebugValue</h2>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useFriendStatus</span>(<span class="hljs-params">friendID</span>) </span>{
+  <span class="hljs-keyword">const</span> [isOnline, setIsOnline] = useState(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-comment">// ...</span>
+
+  <span class="hljs-comment">// &#x5728;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x4E2D;&#x7684;&#x8FD9;&#x4E2A; Hook &#x65C1;&#x8FB9;&#x663E;&#x793A;&#x6807;&#x7B7E;</span>
+  <span class="hljs-comment">// e.g. &quot;FriendStatus: Online&quot;</span>
+  useDebugValue(isOnline ? <span class="hljs-string">&apos;Online&apos;</span> : <span class="hljs-string">&apos;Offline&apos;</span>);
+
+  <span class="hljs-keyword">return</span> isOnline;
+}
+</code></pre>
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;-hook">&#x81EA;&#x5B9A;&#x4E49; Hook</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="API参考.html" class="navigation navigation-prev " aria-label="Previous page: API参考">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="总结.html" class="navigation navigation-next " aria-label="Next page: 总结">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Hooks","level":"1.2.1.1.4","depth":4,"next":{"title":"总结","level":"1.2.1.1.5","depth":4,"path":"web前端/react/官方文档精要/总结.md","ref":"web前端/react/官方文档精要/总结.md","articles":[]},"previous":{"title":"API参考","level":"1.2.1.1.3","depth":4,"path":"web前端/react/官方文档精要/API参考.md","ref":"web前端/react/官方文档精要/API参考.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"web前端/react/官方文档精要/Hooks.md","mtime":"2019-11-29T06:20:25.409Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-04T10:08:49.255Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
