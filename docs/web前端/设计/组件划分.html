@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>XSS攻击 · GitBook</title>
+        <title>组件划分 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -229,9 +229,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.1" data-path="../设计/组件划分.html">
+        <li class="chapter active" data-level="1.2.2.1" data-path="组件划分.html">
             
-                <a href="../设计/组件划分.html">
+                <a href="组件划分.html">
             
                     
                     组件划分
@@ -261,9 +261,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.3.1" data-path="XSS攻击.html">
+        <li class="chapter " data-level="1.2.3.1" data-path="../安全/XSS攻击.html">
             
-                <a href="XSS攻击.html">
+                <a href="../安全/XSS攻击.html">
             
                     
                     XSS攻击
@@ -404,7 +404,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >XSS攻击</a>
+        <a href="../.." >组件划分</a>
     </h1>
 </div>
 
@@ -419,13 +419,153 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="xss&#x653B;&#x51FB;">XSS&#x653B;&#x51FB;</h1>
-<h2 id="&#x539F;&#x7406;">&#x539F;&#x7406;</h2>
-<p>XSS&#x653B;&#x51FB;&#x57FA;&#x672C;&#x4E0A;&#x662F;&#x57FA;&#x4E8E;js&#x811A;&#x672C;&#x7684;&#xFF08;&#x5728;flash&#x4E2D;&#x662F;ActionScript&#xFF09;&#xFF0C;&#x5229;&#x7528;&#x9875;&#x9762;&#x4E0A;&#x7684;bug&#x8F93;&#x5165;&#x4E00;&#x4E9B;js&#x6216;sql&#x811A;&#x672C;&#x5E76;&#x6267;&#x884C;&#xFF08;&#x83B7;&#x53D6;cookie&#xFF0C;&#x53D1;&#x9001;&#x6570;&#x636E;&#xFF0C;&#x5220;&#x5E93;&#x7B49;&#xFF09;</p>
-<h2 id="&#x9632;&#x8303;">&#x9632;&#x8303;</h2>
+                                <h1 id="&#x7EC4;&#x4EF6;&#x5212;&#x5206;">&#x7EC4;&#x4EF6;&#x5212;&#x5206;</h1>
+<h2 id="&#x7EC4;&#x4EF6;&#x5206;&#x7C7B;">&#x7EC4;&#x4EF6;&#x5206;&#x7C7B;</h2>
+<h3 id="1&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;">1.&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;</h3>
 <ul>
-<li>&#x5BF9;&#x6240;&#x6709;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x8F6C;&#x4E49;</li>
-<li>&#x8BBE;&#x7F6E;cookie httponly</li>
+<li>&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x4ECE;&#x83B7;&#x53D6;&#x3001;&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF0C;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x8F83;&#x5927;&#x72B6;&#x6001;&#xFF0C;&#x6765;&#x6E90;&#x4E8E;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x6570;&#x636E;&#x8F83;&#x5C11;</li>
+<li>&#x4F8B;&#x5982;&#xFF1A;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7EC4;&#x4EF6;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x4ECE;&#x540E;&#x7AEF;&#x83B7;&#x53D6;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x6240;&#x9700;&#x7684;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x5B50;&#x7EC4;&#x4EF6;&#x4F9D;&#x8D56;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x6765;&#x63D0;&#x4F9B;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x4EA4;&#x4E92;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Page</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">const</span> data = useApi(<span class="hljs-string">&quot;some url&quot;</span>)
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Framework</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Functions</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Framework</span>&gt;</span>
+  )
+}
+</span></code></pre>
+<h3 id="2&#x6846;&#x67B6;&#x7EC4;&#x4EF6;">2.&#x6846;&#x67B6;&#x7EC4;&#x4EF6;</h3>
+<ul>
+<li>&#x6846;&#x67B6;&#x7EC4;&#x4EF6;&#x7528;&#x4E8E;&#x5E03;&#x5C40;&#x3001;&#x5BB9;&#x7EB3;&#x5176;&#x4ED6;&#x7EC4;&#x4EF6;&#xFF0C;&#x662F;&#x8F83;&#x4E3A;&#x901A;&#x7528;&#x7684;&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#xFF0C;&#x5305;&#x542B;&#x7684;&#x4E1A;&#x52A1;&#x8F83;&#x5C11;&#xFF0C;&#x81EA;&#x8EAB;&#x6570;&#x636E;&#x4E0E;&#x5916;&#x754C;&#x5173;&#x8054;&#x8F83;&#x5C11;</li>
+<li>&#x4F8B;&#x5982;&#xFF1A;Card, Row, Col, Modal</li>
+</ul>
+<pre><code class="lang-js">&lt;Card&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Row</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Func1</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">Row</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Func2</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+</span></code></pre>
+<h3 id="3&#x529F;&#x80FD;&#x7EC4;&#x4EF6;">3.&#x529F;&#x80FD;&#x7EC4;&#x4EF6;</h3>
+<ul>
+<li>&#x529F;&#x80FD;&#x7EC4;&#x4EF6;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x3001;&#x4E1A;&#x52A1;&#x6216;&#x4EA4;&#x4E92;</li>
+<li>&#x4F8B;&#x5982;&#xFF1A;Button, Input, Form</li>
+</ul>
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;hook&#x5206;&#x7C7B;">&#x81EA;&#x5B9A;&#x4E49;hook&#x5206;&#x7C7B;</h2>
+<blockquote>
+<p>&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;hook&#x5B9E;&#x73B0;UI&#x4E0E;&#x903B;&#x8F91;&#x5206;&#x79BB;</p>
+</blockquote>
+<h3 id="1&#x6570;&#x636E;hook">1.&#x6570;&#x636E;hook</h3>
+<ul>
+<li>&#x5BF9;useState&#xFF0C;useReducer&#xFF0C;useContext&#xFF0C;useRef&#x7684;&#x62D3;&#x5C55;&#xFF0C;&#x63D0;&#x4F9B;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x64CD;&#x4F5C;</li>
+</ul>
+<pre><code class="lang-ts">import * as React from &apos;react&apos;;
+
+interface state {
+  current: number, 
+}
+
+interface action {
+  type: string,
+  payload: {total: number, to?: number}
+}
+
+const initialState: state = {current: 0};
+
+function reducer(state: state, action: action) {
+  const {total} = action.payload
+  const current = state.current
+
+  switch (action.type) {
+    case &apos;prev&apos;:
+      if(current &gt; 0){
+        return {current: current - 1};
+      }
+      return {current: total - 1}
+    case &apos;next&apos;:
+      if(current &lt; total - 1){
+        return {current: current + 1};
+      }
+      return {current: 0}
+    case &apos;jumpTo&apos;:
+      const to = action.payload.to
+      if(to &gt;= 0 &amp;&amp; to &lt; total){
+        return {current: to};
+      }
+      return state
+    default:
+      throw new Error(&quot;invalid type&quot;);
+  }
+}
+
+export default function useRange(total: number): [number, () =&gt; void, () =&gt; void, (to: number) =&gt; void] {
+  if(total &lt; 1){
+    total = 1
+  }
+
+  const [{current}, dispatch] = React.useReducer(reducer, initialState);
+
+  const prev = React.useCallback(() =&gt; {
+    dispatch({type: &quot;prev&quot;, payload: {total}})
+  }, [total])
+
+  const next = React.useCallback(() =&gt; {
+    dispatch({type: &quot;next&quot;, payload: {total}})
+  }, [total])
+
+  const jumpTo = React.useCallback((to: number) =&gt; {
+    dispatch({type: &quot;jumpTo&quot;, payload: {total, to}})
+  }, [total])
+
+  return [current, prev, next, jumpTo]
+}
+</code></pre>
+<h3 id="2&#x526F;&#x4F5C;&#x7528;hook">2.&#x526F;&#x4F5C;&#x7528;hook</h3>
+<ul>
+<li>&#x5BF9;useEffect&#x7684;&#x62D3;&#x5C55;&#xFF0C;&#x81EA;&#x6210;&#x4E00;&#x4F53;&#xFF0C;&#x4F9D;&#x8D56;&#x548C;&#x8FD4;&#x56DE;&#x8F83;&#x5C11;&#x7684;&#x6570;&#x636E;</li>
+</ul>
+<pre><code class="lang-ts">import * as React from &quot;react&quot;
+
+export default function useKeys(keyMap : {[propName: string]: () =&gt; void}){
+  React.useEffect(() =&gt; {
+    const onkeydown = (e) =&gt; {
+      if(keyMap[e.code]){
+        keyMap[e.code]()
+      }
+    }
+
+    window.addEventListener(&quot;keydown&quot;, onkeydown)
+
+    return () =&gt; {
+      window.removeEventListener(&quot;keydown&quot;, onkeydown)
+    }
+  }, (&lt;any&gt;Object).values(keyMap))
+}
+</code></pre>
+<pre><code class="lang-ts">import * as React from &quot;react&quot;
+
+export default function useLoop(action: () =&gt; void, gap: number) {
+  const id: {current: number} = React.useRef();
+
+  React.useEffect(() =&gt; {
+    id.current = setInterval(() =&gt; {
+      action()
+    }, gap)
+
+    return () =&gt; {
+      clearInterval(id.current)
+    }
+  }, [action, gap])
+}
+</code></pre>
+<h3 id="3&#x7EC4;&#x5408;hook">3.&#x7EC4;&#x5408;hook</h3>
+<ul>
+<li>&#x7EFC;&#x5408;&#x6240;&#x6709;&#x539F;&#x751F;hooks&#x7684;&#x590D;&#x6742;&#x81EA;&#x5B9A;&#x4E49;hooks</li>
+<li>&#x4E00;&#x822C;&#x53EF;&#x4EE5;&#x62C6;&#x5206;</li>
 </ul>
 
                                 
@@ -462,7 +602,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"XSS攻击","level":"1.2.3.1","depth":3,"next":{"title":"开发环境与脚手架","level":"1.2.4","depth":2,"ref":"","articles":[{"title":"使用typescript和storybook开发react组件库","level":"1.2.4.1","depth":3,"path":"web前端/开发环境与脚手架/使用typescript和storybook开发react组件库.md","ref":"web前端/开发环境与脚手架/使用typescript和storybook开发react组件库.md","articles":[]}]},"previous":{"title":"安全","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"XSS攻击","level":"1.2.3.1","depth":3,"path":"web前端/安全/XSS攻击.md","ref":"web前端/安全/XSS攻击.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"web前端/安全/XSS攻击.md","mtime":"2019-11-29T06:33:35.324Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-04T10:11:34.410Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"组件划分","level":"1.2.2.1","depth":3,"next":{"title":"安全","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"XSS攻击","level":"1.2.3.1","depth":3,"path":"web前端/安全/XSS攻击.md","ref":"web前端/安全/XSS攻击.md","articles":[]}]},"previous":{"title":"设计","level":"1.2.2","depth":2,"ref":"","articles":[{"title":"组件划分","level":"1.2.2.1","depth":3,"path":"web前端/设计/组件划分.md","ref":"web前端/设计/组件划分.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"web前端/设计/组件划分.md","mtime":"2019-12-04T09:57:55.048Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-04T10:11:34.410Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
