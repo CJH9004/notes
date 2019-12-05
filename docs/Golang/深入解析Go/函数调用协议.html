@@ -1,0 +1,996 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>函数调用协议 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Go语言程序初始化过程.html" />
+    
+    
+    <link rel="prev" href="基本数据结构.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    web前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    react
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" >
+            
+                <span>
+            
+                    
+                    官方文档精要
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../../web前端/react/官方文档精要/核心概念.html">
+            
+                <a href="../../web前端/react/官方文档精要/核心概念.html">
+            
+                    
+                    核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../../web前端/react/官方文档精要/高级指引.html">
+            
+                <a href="../../web前端/react/官方文档精要/高级指引.html">
+            
+                    
+                    高级指引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="../../web前端/react/官方文档精要/API参考.html">
+            
+                <a href="../../web前端/react/官方文档精要/API参考.html">
+            
+                    
+                    API参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.4" data-path="../../web前端/react/官方文档精要/Hooks.html">
+            
+                <a href="../../web前端/react/官方文档精要/Hooks.html">
+            
+                    
+                    Hooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.5" data-path="../../web前端/react/官方文档精要/总结.html">
+            
+                <a href="../../web前端/react/官方文档精要/总结.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    TypeScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" >
+            
+                <span>
+            
+                    
+                    官方文档精要
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../../web前端/TypeScript/官方文档精要/基础类型与变量声明.html">
+            
+                <a href="../../web前端/TypeScript/官方文档精要/基础类型与变量声明.html">
+            
+                    
+                    基础类型与变量声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../../web前端/TypeScript/官方文档精要/接口.html">
+            
+                <a href="../../web前端/TypeScript/官方文档精要/接口.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" data-path="../../web前端/TypeScript/官方文档精要/类.html">
+            
+                <a href="../../web前端/TypeScript/官方文档精要/类.html">
+            
+                    
+                    类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.4" data-path="../../web前端/TypeScript/官方文档精要/函数.html">
+            
+                <a href="../../web前端/TypeScript/官方文档精要/函数.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.5" data-path="../../web前端/TypeScript/官方文档精要/泛型.html">
+            
+                <a href="../../web前端/TypeScript/官方文档精要/泛型.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.6" data-path="../../web前端/TypeScript/官方文档精要/枚举.html">
+            
+                <a href="../../web前端/TypeScript/官方文档精要/枚举.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.7" data-path="../../web前端/TypeScript/官方文档精要/类型推论.md">
+            
+                <span>
+            
+                    
+                    类型推论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.8" data-path="../../web前端/TypeScript/官方文档精要/类型兼容性.md">
+            
+                <span>
+            
+                    
+                    类型兼容性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.9" data-path="../../web前端/TypeScript/官方文档精要/高级类型.md">
+            
+                <span>
+            
+                    
+                    高级类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.10" data-path="../../web前端/TypeScript/官方文档精要/Symbols.md">
+            
+                <span>
+            
+                    
+                    Symbols
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.11" data-path="../../web前端/TypeScript/官方文档精要/迭代器和生成器.md">
+            
+                <span>
+            
+                    
+                    迭代器和生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.12" data-path="../../web前端/TypeScript/官方文档精要/模块.md">
+            
+                <span>
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.13" data-path="../../web前端/TypeScript/官方文档精要/命名空间.md">
+            
+                <span>
+            
+                    
+                    命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.14" data-path="../../web前端/TypeScript/官方文档精要/命名空间和模块.md">
+            
+                <span>
+            
+                    
+                    命名空间和模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.15" data-path="../../web前端/TypeScript/官方文档精要/声明合并.md">
+            
+                <span>
+            
+                    
+                    声明合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.16" data-path="../../web前端/TypeScript/官方文档精要/JSX.md">
+            
+                <span>
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.17" data-path="../../web前端/TypeScript/官方文档精要/装饰器.md">
+            
+                <span>
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.18" data-path="../../web前端/TypeScript/官方文档精要/Mixins.md">
+            
+                <span>
+            
+                    
+                    Mixins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.19" data-path="../../web前端/TypeScript/官方文档精要/三斜线指令.md">
+            
+                <span>
+            
+                    
+                    三斜线指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.20" data-path="../../web前端/TypeScript/官方文档精要/JavaScript文件类型检查.md">
+            
+                <span>
+            
+                    
+                    JavaScript文件类型检查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../web前端/设计/react组件划分.html">
+            
+                <a href="../../web前端/设计/react组件划分.html">
+            
+                    
+                    react组件划分
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../web前端/安全/XSS攻击.html">
+            
+                <a href="../../web前端/安全/XSS攻击.html">
+            
+                    
+                    XSS攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    开发环境与脚手架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../web前端/开发环境与脚手架/使用typescript和storybook开发react组件库.html">
+            
+                <a href="../../web前端/开发环境与脚手架/使用typescript和storybook开发react组件库.html">
+            
+                    
+                    使用typescript和storybook开发react组件库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Golang
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    深入解析Go
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="基本数据结构.html">
+            
+                <a href="基本数据结构.html">
+            
+                    
+                    基本数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.2" data-path="函数调用协议.html">
+            
+                <a href="函数调用协议.html">
+            
+                    
+                    函数调用协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="Go语言程序初始化过程.html">
+            
+                <a href="Go语言程序初始化过程.html">
+            
+                    
+                    Go语言程序初始化过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="goroutine调度.html">
+            
+                <a href="goroutine调度.html">
+            
+                    
+                    goroutine调度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="内存管理.html">
+            
+                <a href="内存管理.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../其他/对golang程序内存优化的总结.html">
+            
+                <a href="../../其他/对golang程序内存优化的总结.html">
+            
+                    
+                    对golang程序内存优化的总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../其他/golang基本类型.html">
+            
+                <a href="../../其他/golang基本类型.html">
+            
+                    
+                    golang基本类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../其他/p2p_udp打洞.html">
+            
+                <a href="../../其他/p2p_udp打洞.html">
+            
+                    
+                    p2p_udp打洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >函数调用协议</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x51FD;&#x6570;&#x8C03;&#x7528;&#x534F;&#x8BAE;">&#x51FD;&#x6570;&#x8C03;&#x7528;&#x534F;&#x8BAE;</h1>
+<h2 id="go&#x8C03;&#x7528;&#x6C47;&#x7F16;&#x548C;c">Go&#x8C03;&#x7528;&#x6C47;&#x7F16;&#x548C;C</h2>
+<p>&#x53EA;&#x8981;&#x4E0D;&#x4F7F;&#x7528;C&#x7684;&#x6807;&#x51C6;&#x5E93;&#x51FD;&#x6570;&#xFF0C;Go&#x4E2D;&#x662F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;C&#x548C;&#x6C47;&#x7F16;&#x8BED;&#x8A00;&#x7684;&#x3002;&#x5176;&#x5B9E;&#x9053;&#x7406;&#x5F88;&#x7B80;&#x5355;&#xFF0C;Go&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x5E93;&#x5C31;&#x662F;&#x7528;C&#x548C;&#x6C47;&#x7F16;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;Go&#x5FC5;&#x987B;&#x662F;&#x80FD;&#x591F;&#x8C03;&#x7528;&#x5230;&#x5B83;&#x4EEC;&#x7684;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x534F;&#x8BAE;&#x3002;</p>
+<h2 id="&#x591A;&#x503C;&#x8FD4;&#x56DE;">&#x591A;&#x503C;&#x8FD4;&#x56DE;</h2>
+<p>Go&#x662F;&#x4F7F;&#x7528;&#x6808;&#x7A7A;&#x95F4;&#x6765;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x3002;&#x800C;&#x5E38;&#x89C1;&#x7684;C&#x8BED;&#x8A00;&#x662F;&#x901A;&#x8FC7;&#x5BC4;&#x5B58;&#x5668;&#x6765;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x3002;</p>
+<h2 id="go&#x5173;&#x952E;&#x5B57;">go&#x5173;&#x952E;&#x5B57;</h2>
+<pre><code class="lang-go"><span class="hljs-comment">// &#x8C03;&#x7528;f(1, 2, 3)&#x65F6;&#x7684;&#x6C47;&#x7F16;&#x4EE3;&#x7801;</span>
+MOVL    $<span class="hljs-number">1</span>, <span class="hljs-number">0</span>(SP)
+MOVL    $<span class="hljs-number">2</span>, <span class="hljs-number">4</span>(SP)
+MOVL    $<span class="hljs-number">3</span>, <span class="hljs-number">8</span>(SP) <span class="hljs-comment">// &#x53C2;&#x6570;1,2,3&#x5165;&#x6808;</span>
+CALL    f(SB) <span class="hljs-comment">// &#x8C03;&#x7528;&#x51FD;&#x6570;</span>
+
+<span class="hljs-comment">// &#x4E0B;&#x9762;&#x662F;go f(1, 2, 3)&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</span>
+MOVL    $<span class="hljs-number">1</span>, <span class="hljs-number">0</span>(SP)
+MOVL    $<span class="hljs-number">2</span>, <span class="hljs-number">4</span>(SP)
+MOVL    $<span class="hljs-number">3</span>, <span class="hljs-number">8</span>(SP) <span class="hljs-comment">// &#x53C2;&#x6570;1,2,3&#x5165;&#x6808;</span>
+PUSHQ   $f(SB)
+PUSHQ   $<span class="hljs-number">12</span>  <span class="hljs-comment">// &#x5C06;&#x51FD;&#x6570;&#x548C;12&#x5165;&#x6808;&#xFF0C;12&#x662F;&#x53C2;&#x6570;&#x5360;&#x7528;&#x7684;&#x5927;&#x5C0F;</span>
+CALL    runtime.newproc(SB) <span class="hljs-comment">// &#x7136;&#x540E;&#x8C03;&#x7528;&#x51FD;&#x6570;runtime.newproc&#x3002;</span>
+POPQ    AX
+POPQ    AX
+</code></pre>
+<p>runtime.newproc&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x7684;&#x53C2;&#x6570;&#x5206;&#x522B;&#x662F;&#xFF1A;&#x53C2;&#x6570;&#x5927;&#x5C0F;&#xFF0C;&#x65B0;&#x7684;goroutine&#x662F;&#x8981;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x51FD;&#x6570;&#x7684;n&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x5728;runtime.newproc&#x4E2D;&#xFF0C;&#x4F1A;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6808;&#x7A7A;&#x95F4;&#xFF0C;&#x5C06;&#x6808;&#x53C2;&#x6570;&#x7684;12&#x4E2A;&#x5B57;&#x8282;&#x62F7;&#x8D1D;&#x5230;&#x65B0;&#x6808;&#x7A7A;&#x95F4;&#x4E2D;&#x5E76;&#x8BA9;&#x6808;&#x6307;&#x9488;&#x6307;&#x5411;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x65F6;&#x7684;&#x7EBF;&#x7A0B;&#x72B6;&#x6001;&#x6709;&#x70B9;&#x50CF;&#x5F53;&#x88AB;&#x8C03;&#x5EA6;&#x5668;&#x5265;&#x593A;CPU&#x540E;&#x4E00;&#x6837;&#xFF0C;&#x5BC4;&#x5B58;&#x5668;PC&#x3001;SP&#x4F1A;&#x88AB;&#x4FDD;&#x5B58;&#x5230;&#x7C7B;&#x4F3C;&#x4E8E;&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x5757;&#x7684;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;struct G&#x5185;&#x3002;f&#x88AB;&#x5B58;&#x653E;&#x5728;&#x4E86;struct G&#x7684;entry&#x57DF;&#xFF0C;&#x540E;&#x9762;&#x8FDB;&#x884C;&#x8C03;&#x5EA6;&#x5668;&#x6062;&#x590D;goroutine&#x7684;&#x8FD0;&#x884C;&#xFF0C;&#x65B0;&#x7EBF;&#x7A0B;&#x5C06;&#x4ECE;f&#x5F00;&#x59CB;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x603B;&#x7ED3;&#x4E00;&#x4E2A;&#xFF0C;go&#x5173;&#x952E;&#x5B57;&#x7684;&#x5B9E;&#x73B0;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;&#x8BED;&#x6CD5;&#x7CD6;&#x8863;&#x800C;&#x5DF2;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#xFF1A;<code>go f(args)</code>&#x53EF;&#x4EE5;&#x770B;&#x4F5C;<code>runtime.newproc(size, f, args)</code></p>
+<h2 id="defer&#x5173;&#x952E;&#x5B57;">defer&#x5173;&#x952E;&#x5B57;</h2>
+<h3 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h3>
+<ul>
+<li>defer&#x7528;&#x4E8E;&#x8D44;&#x6E90;&#x7684;&#x91CA;&#x653E;&#xFF0C;&#x4F1A;&#x5728;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;defer&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x8C03;&#x7528;&#x987A;&#x5E8F;&#x7C7B;&#x4F3C;&#x4E8E;&#x6808;&#xFF0C;&#x8D8A;&#x540E;&#x9762;&#x7684;defer&#x8868;&#x8FBE;&#x5F0F;&#x8D8A;&#x5148;&#x88AB;&#x8C03;&#x7528;&#x3002;</li>
+<li>return xxx&#x8FD9;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x6761;&#x539F;&#x5B50;&#x6307;&#x4EE4;&#xFF1A;<ol>
+<li>&#x8FD4;&#x56DE;&#x503C; = xxx</li>
+<li>&#x8C03;&#x7528;defer&#x51FD;&#x6570;</li>
+<li>&#x7A7A;&#x7684;return</li>
+</ol>
+</li>
+</ul>
+<h3 id="defer&#x7684;&#x5B9E;&#x73B0;">defer&#x7684;&#x5B9E;&#x73B0;</h3>
+<p>defer&#x5173;&#x952E;&#x5B57;&#x7684;&#x5B9E;&#x73B0;&#x8DDF;go&#x5173;&#x952E;&#x5B57;&#x5F88;&#x7C7B;&#x4F3C;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x5B83;&#x8C03;&#x7528;&#x7684;&#x662F;runtime.deferproc&#x800C;&#x4E0D;&#x662F;runtime.newproc&#x3002;&#x5728;defer&#x51FA;&#x73B0;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x63D2;&#x5165;&#x4E86;&#x6307;&#x4EE4;call runtime.deferproc&#xFF0C;&#x7136;&#x540E;&#x5728;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x63D2;&#x5165;&#x6307;&#x4EE4;call runtime.deferreturn&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-comment">// &#x666E;&#x901A;&#x7684;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x65F6;&#xFF0C;&#x6C47;&#x7F16;&#x4EE3;&#x7801;&#x7C7B;&#x4F3C;&#xFF1A;</span>
+add xx SP
+<span class="hljs-keyword">return</span>
+<span class="hljs-comment">// &#x5982;&#x679C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;defer&#x8BED;&#x53E5;&#xFF0C;&#x5219;&#x6C47;&#x7F16;&#x4EE3;&#x7801;&#x662F;&#xFF1A;</span>
+call runtime.deferreturn&#xFF0C;
+add xx SP
+<span class="hljs-keyword">return</span>
+</code></pre>
+<p>goroutine&#x7684;&#x63A7;&#x5236;&#x7ED3;&#x6784;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x5F20;&#x8868;&#x8BB0;&#x5F55;defer&#xFF0C;&#x8C03;&#x7528;runtime.deferproc&#x65F6;&#x4F1A;&#x5C06;&#x9700;&#x8981;defer&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x8BB0;&#x5F55;&#x5728;&#x8868;&#x4E2D;&#xFF0C;&#x800C;&#x5728;&#x8C03;&#x7528;runtime.deferreturn&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5219;&#x4F1A;&#x4F9D;&#x6B21;&#x4ECE;defer&#x8868;&#x4E2D;&#x51FA;&#x6808;&#x5E76;&#x6267;&#x884C;&#x3002;</p>
+<h2 id="&#x8FDE;&#x7EED;&#x6808;">&#x8FDE;&#x7EED;&#x6808;</h2>
+<p>Go&#x8BED;&#x8A00;&#x652F;&#x6301;goroutine&#xFF0C;&#x6BCF;&#x4E2A;goroutine&#x9700;&#x8981;&#x80FD;&#x591F;&#x8FD0;&#x884C;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x6808;&#x3002;goroutine&#x53EF;&#x4EE5;&#x521D;&#x59CB;&#x65F6;&#x53EA;&#x7ED9;&#x6808;&#x5206;&#x914D;&#x5F88;&#x5C0F;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x7136;&#x540E;&#x968F;&#x7740;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x9700;&#x8981;&#x81EA;&#x52A8;&#x5730;&#x589E;&#x957F;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;Go&#x53EF;&#x4EE5;&#x5F00;&#x5343;&#x5343;&#x4E07;&#x4E07;&#x4E2A;goroutine&#x800C;&#x4E0D;&#x4F1A;&#x8017;&#x5C3D;&#x5185;&#x5B58;&#x3002;</p>
+<h3 id="&#x57FA;&#x672C;&#x539F;&#x7406;">&#x57FA;&#x672C;&#x539F;&#x7406;</h3>
+<ol>
+<li>&#x6BCF;&#x6B21;&#x6267;&#x884C;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x65F6;Go&#x7684;runtime&#x90FD;&#x4F1A;&#x8FDB;&#x884C;&#x68C0;&#x6D4B;</li>
+<li>&#x82E5;&#x5F53;&#x524D;&#x6808;&#x7684;&#x5927;&#x5C0F;&#x4E0D;&#x591F;&#x7528;&#xFF0C;&#x5219;&#x4F1A;&#x89E6;&#x53D1;&#x201C;&#x4E2D;&#x65AD;&#x201D;</li>
+<li>&#x4ECE;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x8FDB;&#x5165;&#x5230;Go&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x5E93;</li>
+<li>Go&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x5E93;&#x4F1A;&#x4FDD;&#x5B58;&#x6B64;&#x65F6;&#x7684;&#x51FD;&#x6570;&#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;</li>
+<li>&#x7136;&#x540E;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8DB3;&#x591F;&#x5927;&#x7684;&#x6808;&#x7A7A;&#x95F4;</li>
+<li>&#x5C06;&#x65E7;&#x6808;&#x7684;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x5230;&#x65B0;&#x6808;&#x4E2D;&#xFF0C;&#x5E76;&#x505A;&#x4E00;&#x4E9B;&#x8BBE;&#x7F6E;</li>
+<li>&#x4F7F;&#x5F97;&#x5F53;&#x51FD;&#x6570;&#x6062;&#x590D;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x51FD;&#x6570;&#x4F1A;&#x5728;&#x65B0;&#x5206;&#x914D;&#x7684;&#x6808;&#x4E2D;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x4EFF;&#x4F5B;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x90FD;&#x6CA1;&#x53D1;&#x751F;&#x8FC7;&#x4E00;&#x6837;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x89C9;&#x5F97;&#x81EA;&#x5DF1;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x4E00;&#x5757;&#x5927;&#x5C0F;&#x201C;&#x65E0;&#x9650;&#x201D;&#x7684;&#x6808;&#x7A7A;&#x95F4;&#x3002;</li>
+</ol>
+<h3 id="&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;">&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;</h3>
+<ol>
+<li>&#x5982;&#x4F55;&#x6355;&#x83B7;&#x5230;&#x51FD;&#x6570;&#x7684;&#x6808;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;</li>
+<li>&#x4FDD;&#x5B58;&#x5F53;&#x524D;goroutine&#x7684;&#x4E0A;&#x4E0B;&#x6587;,&#x5206;&#x914D;&#x65B0;&#x7684;&#x6808;&#x7A7A;&#x95F4;</li>
+<li>&#x65E7;&#x6808;&#x6570;&#x636E;&#x590D;&#x5236;&#x5230;&#x65B0;&#x6808;</li>
+<li>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x540E;&#x6808;&#x662F;&#x8981;&#x7F29;&#x5C0F;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x4F1A;&#x5185;&#x5B58;&#x6D6A;&#x8D39;&#x7A7A;&#x95F4;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x8FD8;&#x9700;&#x8981;&#x5728;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x65F6;&#x5904;&#x7406;&#x6808;&#x7F29;&#x5C0F;&#x7684;&#x95EE;&#x9898;: &#x6808;&#x7684;&#x6536;&#x7F29;&#x662F;&#x5783;&#x573E;&#x56DE;&#x6536;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x5B9E;&#x73B0;&#x7684;&#xFF0E;&#x5F53;&#x68C0;&#x6D4B;&#x5230;&#x6808;&#x53EA;&#x4F7F;&#x7528;&#x4E86;&#x4E0D;&#x5230;1/4&#x65F6;&#xFF0C;&#x6808;&#x7F29;&#x5C0F;&#x4E3A;&#x539F;&#x6765;&#x7684;1/2.</li>
+</ol>
+<h2 id="&#x95ED;&#x5305;&#x7684;&#x5B9E;&#x73B0;">&#x95ED;&#x5305;&#x7684;&#x5B9E;&#x73B0;</h2>
+<h3 id="escape-analyze">escape analyze</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> f() *Cursor {
+    <span class="hljs-keyword">var</span> c Cursor
+    c.X = <span class="hljs-number">500</span>
+    noinline()
+    <span class="hljs-keyword">return</span> &amp;c
+}
+</code></pre>
+<p>Cursor&#x662F;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x5728;C&#x8BED;&#x8A00;&#x4E2D;&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x53D8;&#x91CF;c&#x662F;&#x5728;&#x6808;&#x4E0A;&#x5206;&#x914D;&#x7684;&#xFF0C;&#x5F53;&#x51FD;&#x6570;f&#x8FD4;&#x56DE;&#x540E;c&#x7684;&#x7A7A;&#x95F4;&#x5C31;&#x5931;&#x6548;&#x4E86;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5728;Go&#x8BED;&#x8A00;&#x89C4;&#x8303;&#x4E2D;&#x6709;&#x8BF4;&#x660E;&#xFF0C;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x5728;Go&#x8BED;&#x8A00;&#x4E2D;&#x5408;&#x6CD5;&#x7684;&#x3002;&#x8BED;&#x8A00;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x8BC6;&#x522B;&#x51FA;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5E76;&#x5728;&#x5806;&#x4E0A;&#x5206;&#x914D;c&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x51FD;&#x6570;f&#x7684;&#x6808;&#x4E0A;&#x3002;</p>
+<p>&#x8BC6;&#x522B;&#x51FA;&#x53D8;&#x91CF;&#x9700;&#x8981;&#x5728;&#x5806;&#x4E0A;&#x5206;&#x914D;&#xFF0C;&#x662F;&#x7531;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x4E00;&#x79CD;&#x53EB;escape analyze&#x7684;&#x6280;&#x672F;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x5982;&#x679C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;
+<code>go build --gcflags=-m main.go</code>
+&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>./main.go:20: moved to heap: c
+./main.go:23: &amp;c escapes to heap
+</code></pre><p>&#x8868;&#x793A;c&#x9003;&#x9038;&#x4E86;&#xFF0C;&#x88AB;&#x79FB;&#x5230;&#x5806;&#x4E2D;&#x3002;escape analyze&#x53EF;&#x4EE5;&#x5206;&#x6790;&#x51FA;&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x8303;&#x56F4;&#xFF0C;&#x8FD9;&#x662F;&#x5BF9;&#x5783;&#x573E;&#x56DE;&#x6536;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x9879;&#x6280;&#x672F;&#x3002;</p>
+<h3 id="&#x95ED;&#x5305;&#x7ED3;&#x6784;&#x4F53;">&#x95ED;&#x5305;&#x7ED3;&#x6784;&#x4F53;</h3>
+<p>&#x95ED;&#x5305;&#x662F;&#x51FD;&#x6570;&#x548C;&#x5B83;&#x6240;&#x5F15;&#x7528;&#x7684;&#x73AF;&#x5883;&#x3002;&#x6C47;&#x7F16;&#x4E2D;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Closure <span class="hljs-keyword">struct</span> {
+    F <span class="hljs-keyword">func</span>()() 
+    i *<span class="hljs-keyword">int</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#x95ED;&#x5305;&#x65F6;&#x5E76;&#x4E0D;&#x662F;&#x5355;&#x7EAF;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x662F;&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x8BB0;&#x5F55;&#x4E0B;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x5730;&#x5740;&#x548C;&#x5F15;&#x7528;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x5730;&#x5740;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="基本数据结构.html" class="navigation navigation-prev " aria-label="Previous page: 基本数据结构">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Go语言程序初始化过程.html" class="navigation navigation-next " aria-label="Next page: Go语言程序初始化过程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"函数调用协议","level":"1.3.1.2","depth":3,"next":{"title":"Go语言程序初始化过程","level":"1.3.1.3","depth":3,"path":"Golang/深入解析Go/Go语言程序初始化过程.md","ref":"Golang/深入解析Go/Go语言程序初始化过程.md","articles":[]},"previous":{"title":"基本数据结构","level":"1.3.1.1","depth":3,"path":"Golang/深入解析Go/基本数据结构.md","ref":"Golang/深入解析Go/基本数据结构.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Golang/深入解析Go/函数调用协议.md","mtime":"2019-12-05T08:46:40.350Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-05T09:49:08.098Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
