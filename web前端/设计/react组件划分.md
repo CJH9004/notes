@@ -48,7 +48,7 @@ function Page(){
 
 - 对useState，useReducer，useContext，useRef的拓展，提供对数据的操作
 
-```ts
+```js
 import * as React from 'react';
 
 interface state {
@@ -115,7 +115,7 @@ export default function useRange(total: number): [number, () => void, () => void
 
 - 对useEffect的拓展，自成一体，依赖和返回较少的数据
 
-```ts
+```js
 import * as React from "react"
 
 export default function useKeys(keyMap : {[propName: string]: () => void}){
@@ -135,7 +135,7 @@ export default function useKeys(keyMap : {[propName: string]: () => void}){
 }
 ```
 
-```ts
+```js
 import * as React from "react"
 
 export default function useLoop(action: () => void, gap: number) {
