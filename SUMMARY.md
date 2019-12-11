@@ -10,6 +10,9 @@
       * [API参考](web前端/react/官方文档精要/API参考.md)
       * [Hooks](web前端/react/官方文档精要/Hooks.md)
       * [总结](web前端/react/官方文档精要/总结.md)
+    * 设计
+      * [react组件划分](web前端/react/设计/react组件划分.md)
+      * [react性能优化](web前端/react/设计/react性能优化.md)
   * TypeScript
     * 官方文档精要
       * [基础类型与变量声明](web前端/TypeScript/官方文档精要/基础类型与变量声明.md)
@@ -32,8 +35,6 @@
       * [Mixins](web前端/TypeScript/官方文档精要/Mixins.md)
       * [三斜线指令](web前端/TypeScript/官方文档精要/三斜线指令.md)
       * [JavaScript文件类型检查](web前端/TypeScript/官方文档精要/JavaScript文件类型检查.md)
-  * 设计
-    * [react组件划分](web前端/设计/react组件划分.md)
   * 安全
     * [XSS攻击](web前端/安全/XSS攻击.md)
   * 开发环境与脚手架
