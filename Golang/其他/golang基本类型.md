@@ -30,7 +30,7 @@ type SliceHeader struct {
 
 - slice：array[start : end : cap]
 - 切片可以和 nil 进行比较，只有当切片底层数据指针为空时切 片本身为 nil ，这时候切片的长度和容量信息将是无效的。
-- 在切片收部添加元素, 避免生成中间数组
+- 在切片首部添加元素, 避免生成中间数组
 
 ```go
 a = append(a, 0) // length + 1

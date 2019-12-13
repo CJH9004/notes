@@ -35,11 +35,11 @@ GODEBUG='gctrace=1' ./main
 
 ## 3. 原因
 
-go GC的内存不会立即归还给系统，GC有延迟，thrift有缓存
+go GC的内存不会立即归还给系统，GC有延迟，thrift高并发导致内存高峰
 
 ## 4. 解决办法
 
-强制GC和归还内存，减少thrift缓存大少
+强制GC和归还内存，减少thrift并发
 
 ```golang
 import "runtime/debug"
