@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>golang的操作符==、!= · GitBook</title>
+        <title>golang的泛型函数 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="golang的泛型函数.html" />
     
-    
-    <link rel="prev" href="p2p_udp打洞.html" />
+    <link rel="prev" href="golang的操作符==、!=.html" />
     
 
     </head>
@@ -808,7 +806,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.2.4" data-path="golang的操作符==、!=.html">
+        <li class="chapter " data-level="1.3.2.4" data-path="golang的操作符==、!=.html">
             
                 <a href="golang的操作符==、!=.html">
             
@@ -821,7 +819,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.5" data-path="golang的泛型函数.html">
+        <li class="chapter active" data-level="1.3.2.5" data-path="golang的泛型函数.html">
             
                 <a href="golang的泛型函数.html">
             
@@ -874,7 +872,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >golang的操作符==、!=</a>
+        <a href="../.." >golang的泛型函数</a>
     </h1>
 </div>
 
@@ -889,42 +887,62 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="golang&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x3001;">golang&#x7684;&#x64CD;&#x4F5C;&#x7B26;==&#x3001;!=</h1>
-<h2 id="&#x4E00;&#x822C;&#x6BD4;&#x8F83;&#x7684;&#x662F;&#x503C;">&#x4E00;&#x822C;&#x6BD4;&#x8F83;&#x7684;&#x662F;&#x503C;</h2>
-<pre><code class="lang-go"><span class="hljs-comment">// interface, struct</span>
-<span class="hljs-keyword">var</span> a <span class="hljs-keyword">interface</span>{} = <span class="hljs-keyword">struct</span>{ <span class="hljs-keyword">string</span> }{<span class="hljs-string">&quot;asdf&quot;</span>}
-<span class="hljs-keyword">var</span> b <span class="hljs-keyword">interface</span>{} = <span class="hljs-keyword">struct</span>{ <span class="hljs-keyword">string</span> }{<span class="hljs-string">&quot;asdf&quot;</span>}
-<span class="hljs-built_in">println</span>(a == b, <span class="hljs-keyword">struct</span>{}{} == <span class="hljs-keyword">struct</span>{}{}) <span class="hljs-comment">// true, true</span>
+                                <h1 id="golang&#x7684;&#x6CDB;&#x578B;&#x51FD;&#x6570;">golang&#x7684;&#x6CDB;&#x578B;&#x51FD;&#x6570;</h1>
+<h2 id="sort&#x5305;&#x4F7F;&#x7528;&#x7EAF;&#x63A5;&#x53E3;">sort&#x5305;&#x4F7F;&#x7528;&#x7EAF;&#x63A5;&#x53E3;</h2>
+<h2 id="&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#x65AD;&#x8A00;">&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#x65AD;&#x8A00;</h2>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> add (a <span class="hljs-keyword">interface</span>{}, b <span class="hljs-keyword">interface</span>{}) <span class="hljs-keyword">interface</span>{} {
+  <span class="hljs-keyword">switch</span> a.(<span class="hljs-keyword">type</span>) {
+    <span class="hljs-comment">// ...</span>
+  }
+}
 
-<span class="hljs-comment">// string</span>
-c := <span class="hljs-string">&quot;asdf&quot;</span>
-d := <span class="hljs-string">&quot;asdfd&quot;</span>
-<span class="hljs-built_in">println</span>(c == d[<span class="hljs-number">0</span>:<span class="hljs-number">4</span>]) <span class="hljs-comment">// &#x5373;&#x4F7F;&#x5B57;&#x7B26;&#x4E32;&#x5E95;&#x5C42;&#x4E3A;&#x4E00;&#x4E2A;*[]byte&#xFF0C;&#x4ECD;&#x7136;&#x662F;true</span>
-
-<span class="hljs-comment">// array</span>
-<span class="hljs-built_in">println</span>([<span class="hljs-number">1</span>]{<span class="hljs-number">1</span>} == [<span class="hljs-number">1</span>]{<span class="hljs-number">1</span>}) <span class="hljs-comment">// true</span>
-
-<span class="hljs-comment">// &#x6307;&#x9488;&#x7684;&#x503C;&#x662F;&#x5730;&#x5740;&#xFF0C;&#x6240;&#x4EE5;&#x6BD4;&#x8F83;&#x7684;&#x662F;&#x5730;&#x5740;</span>
-<span class="hljs-built_in">println</span>(&amp;<span class="hljs-keyword">struct</span>{}{} != &amp;<span class="hljs-keyword">struct</span>{}{}) <span class="hljs-comment">// true</span>
+add(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>).(<span class="hljs-keyword">int</span>)
 </code></pre>
-<h2 id="&#x5207;&#x7247;&#x3001;map&#x3001;func&#x53EA;&#x80FD;&#x548C;nil&#x6BD4;&#x8F83;">&#x5207;&#x7247;&#x3001;map&#x3001;func&#x53EA;&#x80FD;&#x548C;nil&#x6BD4;&#x8F83;</h2>
-<h2 id="&#x4E0E;nil&#x6BD4;&#x8F83;">&#x4E0E;nil&#x6BD4;&#x8F83;</h2>
-<pre><code class="lang-go"><span class="hljs-comment">// interface&#xFF0C;map&#xFF0C;slice&#xFF0C;pointer&#xFF0C;func&#xFF0C;chan&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x5316;&#x4E3A;nil</span>
-<span class="hljs-keyword">var</span> a <span class="hljs-keyword">interface</span>{}
-<span class="hljs-keyword">var</span> b <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">string</span>
-<span class="hljs-keyword">var</span> c []<span class="hljs-keyword">int</span>
-<span class="hljs-keyword">var</span> d *<span class="hljs-keyword">int</span>
-<span class="hljs-keyword">var</span> e <span class="hljs-keyword">func</span>()
-<span class="hljs-keyword">var</span> f <span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>
-<span class="hljs-built_in">println</span>(a == <span class="hljs-literal">nil</span>, b == <span class="hljs-literal">nil</span>, c == <span class="hljs-literal">nil</span>, d == <span class="hljs-literal">nil</span>, e == <span class="hljs-literal">nil</span>, f == <span class="hljs-literal">nil</span>) <span class="hljs-comment">// true...</span>
+<h2 id="&#x5C01;&#x88C5;&#x7C7B;&#x578B;&#x65AD;&#x8A00;">&#x5C01;&#x88C5;&#x7C7B;&#x578B;&#x65AD;&#x8A00;</h2>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;errors&quot;</span>
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> AddFunc <span class="hljs-keyword">func</span>(a <span class="hljs-keyword">interface</span>{}, b <span class="hljs-keyword">interface</span>{}) <span class="hljs-keyword">interface</span>{}
+
+<span class="hljs-keyword">func</span> (f AddFunc) Int(a <span class="hljs-keyword">int</span>, b <span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span> {
+    <span class="hljs-keyword">return</span> f(a, b).(<span class="hljs-keyword">int</span>)
+}
+
+<span class="hljs-keyword">func</span> (f AddFunc) Float64(a <span class="hljs-keyword">float64</span>, b <span class="hljs-keyword">float64</span>) <span class="hljs-keyword">float64</span> {
+    <span class="hljs-keyword">return</span> f(a, b).(<span class="hljs-keyword">float64</span>)
+}
+
+<span class="hljs-keyword">var</span> Add AddFunc = <span class="hljs-keyword">func</span>(a <span class="hljs-keyword">interface</span>{}, b <span class="hljs-keyword">interface</span>{}) <span class="hljs-keyword">interface</span>{} {
+    <span class="hljs-keyword">switch</span> a.(<span class="hljs-keyword">type</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">int</span>:
+        <span class="hljs-keyword">return</span> a.(<span class="hljs-keyword">int</span>) + b.(<span class="hljs-keyword">int</span>)
+    <span class="hljs-keyword">case</span> <span class="hljs-keyword">float64</span>:
+        <span class="hljs-keyword">return</span> a.(<span class="hljs-keyword">float64</span>) + b.(<span class="hljs-keyword">float64</span>)
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-built_in">panic</span>(errors.New(<span class="hljs-string">&quot;not support type&quot;</span>))
+    }
+}
+
+<span class="hljs-keyword">func</span> main() {
+  <span class="hljs-comment">// &#x907F;&#x514D;&#x4F7F;&#x7528;&#x8005;&#x505A;&#x7C7B;&#x578B;&#x65AD;&#x8A00;</span>
+  Add.Int(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+  Add.Float64(<span class="hljs-number">1.2</span>, <span class="hljs-number">1.2</span>)
+}
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-comment">// interface&#x5916;&#x4F7F;&#x7528;= nil&#x3001;:= nil&#x521D;&#x59CB;&#x5316;&#x4ECD;&#x4E3A;nil, &#x4F46;interface{}&#x88AB;&#x8D4B;&#x4E88;&#x4E00;&#x4E2A;&#x503C;&#x4E3A;nil&#x7684;&#x53D8;&#x91CF;&#x540E;&#x4E0D;&#x4E3A;nil</span>
-<span class="hljs-keyword">var</span> a <span class="hljs-keyword">interface</span>{}
-<span class="hljs-keyword">var</span> b *<span class="hljs-keyword">string</span>
-a = b
-c := b
-<span class="hljs-built_in">println</span>(a != <span class="hljs-literal">nil</span>, c == <span class="hljs-literal">nil</span>)
-<span class="hljs-built_in">println</span>(a, b) <span class="hljs-comment">// (0x45f380,0x0) 0x0, &#x56E0;&#x4E3A;interface{}&#x4FDD;&#x5B58;&#x4E86;&#x7C7B;&#x578B;&#x4FE1;&#x606F;</span>
+<h2 id="&#x6309;&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;&#x51FD;&#x6570;">&#x6309;&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;&#x51FD;&#x6570;</h2>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> addInt(a <span class="hljs-keyword">int</span>, b <span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span> {
+  <span class="hljs-keyword">return</span> a + b
+}
+<span class="hljs-keyword">func</span> addFloat64(a <span class="hljs-keyword">float64</span>, b <span class="hljs-keyword">float64</span>) <span class="hljs-keyword">float64</span> {
+  <span class="hljs-keyword">return</span> a + b
+}
+
+addInt(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)
+addFloat64(<span class="hljs-number">1.2</span>,<span class="hljs-number">1.3</span>)
 </code></pre>
 
                                 
@@ -953,14 +971,10 @@ c := b
 
             
                 
-                <a href="p2p_udp打洞.html" class="navigation navigation-prev " aria-label="Previous page: p2p_udp打洞">
+                <a href="golang的操作符==、!=.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: golang的操作符==、!=">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="golang的泛型函数.html" class="navigation navigation-next " aria-label="Next page: golang的泛型函数">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -969,7 +983,7 @@ c := b
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"golang的操作符==、!=","level":"1.3.2.4","depth":3,"next":{"title":"golang的泛型函数","level":"1.3.2.5","depth":3,"path":"Golang/其他/golang的泛型函数.md","ref":"Golang/其他/golang的泛型函数.md","articles":[]},"previous":{"title":"p2p_udp打洞","level":"1.3.2.3","depth":3,"path":"Golang/其他/p2p_udp打洞.md","ref":"Golang/其他/p2p_udp打洞.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Golang/其他/golang的操作符==、!=.md","mtime":"2019-12-14T06:18:03.447Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-15T12:11:23.541Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"golang的泛型函数","level":"1.3.2.5","depth":3,"previous":{"title":"golang的操作符==、!=","level":"1.3.2.4","depth":3,"path":"Golang/其他/golang的操作符==、!=.md","ref":"Golang/其他/golang的操作符==、!=.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Golang/其他/golang的泛型函数.md","mtime":"2019-12-15T06:27:54.275Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-15T12:11:23.541Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
