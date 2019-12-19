@@ -53,14 +53,16 @@
     * [并发难点](Golang/go并发/并发难点.md)
     * [并发原语](Golang/go并发/并发原语.md)
     * [并发模式](Golang/go并发/并发模式.md)
-  * [面试后端](Golang/面试后端/readme.md)
-    * [后端基础知识](Golang/面试后端/后端基础知识.md)
-    * [Linux服务器和性能优化](Golang/面试后端/Linux服务器和性能优化.md)
-    * [网络编程与协议](Golang/面试后端/网络编程与协议.md)
-    * [数据库、SQL与表设计](Golang/面试后端/数据库、SQL与表设计.md)
-    * [网络安全和高并发](Golang/面试后端/网络安全和高并发.md)
   * 其他
     * [对golang程序内存优化的总结](Golang/其他/对golang程序内存优化的总结.md)
     * [golang基本类型](Golang/其他/golang基本类型.md)
     * [p2p_udp打洞](Golang/其他/p2p_udp打洞.md)
     * [golang的操作符==、!=](Golang/其他/golang的操作符==、!=.md)
+    * [golang的泛型函数](Golang/其他/golang的泛型函数.md)
+    
+*后端
+  *[后端基础知识](后端/后端基础知识.md)
+  *[Linux服务器和性能优化](后端/Linux服务器和性能优化.md)
+  *[网络编程与协议](后端/网络编程与协议.md)
+  *[数据库、SQL与表设计](后端/数据库、SQL与表设计.md)
+  *[网络安全和高并发](后端/网络安全和高并发.md)
