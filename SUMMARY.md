@@ -53,6 +53,13 @@
     * [并发难点](Golang/go并发/并发难点.md)
     * [并发原语](Golang/go并发/并发原语.md)
     * [并发模式](Golang/go并发/并发模式.md)
+  * go性能优化
+    * [使用singleflight合并执行缓慢的操作](Golang/go性能优化/使用singleflight合并执行缓慢的操作.md)
+  * 项目
+    * 实现分布式缓存
+      * [单机版缓存](Golang/项目/实现分布式缓存/1.单机版缓存.md)
+  * 源码阅读
+    * [groupcache源码分析](Golang/源码阅读/groupcache源码分析/readme.md)
   * 其他
     * [对golang程序内存优化的总结](Golang/其他/对golang程序内存优化的总结.md)
     * [golang基本类型](Golang/其他/golang基本类型.md)
