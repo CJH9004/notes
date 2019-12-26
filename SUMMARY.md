@@ -56,8 +56,9 @@
   * go性能优化
     * [使用singleflight合并执行缓慢的操作](Golang/go性能优化/使用singleflight合并执行缓慢的操作.md)
   * 项目
-    * 实现分布式缓存
+    * [实现分布式缓存](Golang/项目/实现分布式缓存/readme.md)
       * [单机版缓存](Golang/项目/实现分布式缓存/1.单机版缓存.md)
+      * [分布式缓存](Golang/项目/实现分布式缓存/2.分布式缓存.md)
   * 源码阅读
     * [groupcache源码分析](Golang/源码阅读/groupcache源码分析/readme.md)
   * 其他
